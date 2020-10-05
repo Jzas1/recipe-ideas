@@ -50,6 +50,7 @@ addIngredient.addEventListener("click", function () {
   addItemToDom(itemInput.value);
 
   itemInput.value = "";
+  console.log(ingredients);
 });
 
 function addItemToDom(item) {
@@ -86,9 +87,10 @@ function clearList() {
 }
 
 search.addEventListener("click", function () {
-  // if ((ingredients = [])) {
-  //   showError3();
-  // } else recipeOutput.innerHTML = " ";
+  if (ingredients.length < 1) {
+    showError3();
+  } else recipeOutput.innerHTML = " ";
+
   calculate();
 });
 
