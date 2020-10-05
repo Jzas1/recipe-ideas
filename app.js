@@ -67,11 +67,14 @@ function addEventListenerRemove() {
   remove.forEach((button) => button.addEventListener("click", removeItem));
 }
 function removeItem(e) {
-  let ElValue = e.target.parentNode.textContent;
+  // let ElValue = e.target.parentNode.textContent;
 
-  removeItemString = e.target.parentNode.textContent;
+  e.target.parentNode.remove();
 
-  newString = removeItemString.slice(0, removeItemString.length - 2);
+  removeItemString = e.target.parentNode.textContent.trim();
+
+  newString = removeItemString.slice(0, removeItemString.length - 1);
+
   arrayIndex = ingredients.indexOf(newString);
 
   ingredients.splice(arrayIndex, 1);
