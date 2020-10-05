@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Recipe Ideas</h1>
+        <p class="sub-header">
+          Type in a few of the items you have on hand and generate idea's of what to cook
+        </p>
+      </div>
+    </header>
+    <section id="search-section">
+      <div class="search-container">
+        <div class="search-content-container">
+          <h2>Enter in a few ingredients and see a list of items that you can make!</h2>
+          <input 
+            type="text"
+            placeholder="Enter your ingredients here"
+            id="input"
+            class = "input"
+          />
+          <small class="small">Please enter your ingredient</small>
+          <div class="button-container">
+          <button class="add-ingredients" id="add-ingredients">
+            Add ingredient
+          </button>
+          <button class="search-ingredients">Search ingredients</button>
+          <button class="clear">Clear List</button>
+        </div>
+        </div>
+        <div class="input-list">
+          <h2 class="ingredients-box">Your ingredients</h2>
+          <ul class="ingredient-output"></ul>
+        </div>
+      </div>
+    </section>
+    <section id="output">
+      <div class="output-section">
+        
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>
+
